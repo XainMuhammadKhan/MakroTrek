@@ -35,9 +35,7 @@ export default function HomeScreen() {
       <MacroGrid meals={meals} />
       <CopyButton meals={meals} />
       <ReminderToggle />
-      <RecentMeals meals={meals} onDelete={function (): void {
-        throw new Error('Function not implemented.');
-      }} />
+      <RecentMeals meals={meals} onDelete={loadMeals} />
     </ScrollView>
   );
 }
